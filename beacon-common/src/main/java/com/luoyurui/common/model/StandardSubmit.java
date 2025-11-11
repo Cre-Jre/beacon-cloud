@@ -55,7 +55,7 @@ public class StandardSubmit {
     private LocalDateTime sendTime;
 
     /**
-     * 当前短信的费用，计算短信内容的文字   70字一条，超出部分67字一条
+     * 当前短信的费用，计算短信内容的文字   70字一条，超出部分67字一条   (厘)
      */
     private Long fee;
 
@@ -106,5 +106,11 @@ public class StandardSubmit {
      * 0-验证码短信   1-通知类短信   2-营销类短信
      */
     private int state;
+
+    //buchong
+    /**
+     * 签名的id
+     */
+    private Long signId;
 
 }

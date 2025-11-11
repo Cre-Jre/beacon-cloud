@@ -17,6 +17,6 @@ public class CheckFilterContextTest {
     @org.junit.Test
     public void check() {
         Object object = new Object();
-        checkFilterContext.check(object);
+        checkFilterContext.check(null);
     }
 }
