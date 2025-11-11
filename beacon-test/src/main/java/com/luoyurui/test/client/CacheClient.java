@@ -1,6 +1,7 @@
 package com.luoyurui.test.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.dao.DataAccessException;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -25,5 +26,6 @@ public interface CacheClient {
     @PostMapping(value = "/cache/sadd/{key}")
     void sadd(@PathVariable(value = "key")String key, @RequestBody Map<String,Object>... maps);
 
-
+    @PostMapping("/cache/pipeline/string")
+    void pipelineString(@RequestBody Map<String,String> map);
 }
