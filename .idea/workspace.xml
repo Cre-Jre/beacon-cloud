@@ -5,20 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57ba9605-9101-4ec8-b05b-3479947e887a" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/util/PhoneFormatCheckUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/ApiConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/config/RabbitTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/RabbitMQConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/util/SnowFlakeUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/client/BeaconCacheClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/client/BeaconCacheClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/filter/impl/FeeCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/filter/impl/FeeCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/filter/impl/IPCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/filter/impl/IPCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/filter/impl/MobileCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/filter/impl/MobileCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/filter/impl/SignCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/filter/impl/SignCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/filter/impl/TemplateCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/filter/impl/TemplateCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-api/src/test/java/com/luoyurui/api/filter/CheckFilterContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/test/java/com/luoyurui/api/filter/CheckFilterContextTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/src/main/java/com/luoyurui/cache/controller/CacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-cache/src/main/java/com/luoyurui/cache/controller/CacheController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/ApiStarterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/ApiStarterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/controller/SmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/controller/SmsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/enums/ExceptionEnums.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/enums/ExceptionEnums.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/model/StandardSubmit.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/model/StandardSubmit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/mapper/ClientBalanceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/mapper/ClientBalanceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/src/test/java/com/luoyurui/test/mapper/ClientBalanceMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/luoyurui/test/mapper/ClientBalanceMapperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +199,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762595364753</updated>
-      <workItem from="1762595365781" duration="60403000" />
+      <workItem from="1762595365781" duration="66764000" />
     </task>
     <task id="LOCAL-00001" summary="烽火云短信平台初次提交">
       <option name="closed" value="true" />
@@ -210,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762828618876</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="六个校验完毕">
+      <option name="closed" value="true" />
+      <created>1762843649150</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762843649150</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,18 +226,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="烽火云短信平台初次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="烽火云短信平台初次提交" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/filter/impl/FeeCheckFilter.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="六个校验完毕" />
+    <option name="LAST_COMMIT_MESSAGE" value="六个校验完毕" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

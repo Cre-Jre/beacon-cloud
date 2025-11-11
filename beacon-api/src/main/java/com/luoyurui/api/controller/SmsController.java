@@ -6,8 +6,12 @@ import com.luoyurui.api.filter.CheckFilterContext;
 import com.luoyurui.api.form.SingleSendForm;
 import com.luoyurui.api.util.R;
 import com.luoyurui.api.vo.ResultVO;
+import com.luoyurui.common.constant.RabbitMQConstants;
 import com.luoyurui.common.model.StandardSubmit;
+import com.luoyurui.common.util.SnowFlakeUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.rabbit.connection.CorrelationData;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -25,6 +29,12 @@ import javax.servlet.http.HttpServletRequest;
 @Slf4j
 @RefreshScope
 public class SmsController {
+
+    @Autowired
+    private SnowFlakeUtil snowFlakeUtil;
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
 
     /**
      * 客户端IP地址的请求头信息，多个用','隔开。
@@ -69,7 +79,12 @@ public class SmsController {
 
         //调用策略模式的校验链
         filterContext.check(standardSubmit);
+
+        //基于雪花算法生成唯一的id，并且添加到standardSubmit对象中
+        standardSubmit.setSequenceId(snowFlakeUtil.nextId());
+
         //发送到mq，交给策略模块处理
+        rabbitTemplate.convertAndSend(RabbitMQConstants.SMS_PRE_SEND,standardSubmit,new CorrelationData(standardSubmit.getSequenceId().toString()));
 
         return R.ok();
     }
