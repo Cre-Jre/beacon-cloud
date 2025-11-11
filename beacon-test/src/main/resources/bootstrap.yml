@@ -1,0 +1,23 @@
+# 服务名
+spring:
+  application:
+    name: beacon-test
+  # nacos地址
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.35.130.68:8848
+  # datasource
+  datasource:
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://101.35.130.68:3306/beacon_cloud?characterEncoding=utf-8&&useSSL=false
+    username: root
+    password: LuoYuRui123..!
+# 端口号
+server:
+  port: 20000
+
+# mybatis
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
