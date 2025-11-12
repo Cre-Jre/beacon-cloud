@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57ba9605-9101-4ec8-b05b-3479947e887a" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/BlackGlobalStrategyFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/entity/MobileBlack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/mapper/MobileBlackMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/luoyurui/test/mapper/MobileBlackMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/TransferStrategyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/entity/MobileTransfer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/mapper/MobileTransferMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/luoyurui/test/mapper/MobileTransferMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/CacheConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/CacheConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/enums/ExceptionEnums.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/enums/ExceptionEnums.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/client/BeaconCacheClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/client/BeaconCacheClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/BlackStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/BlackClientStrategyFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/DirtyWordHutoolDFAStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/DirtyWordHutoolDFAStrategyFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/util/ErrorSendMsgUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/util/ErrorSendMsgUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/model/StandardSubmit.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/model/StandardSubmit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/client/CacheClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/client/CacheClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +59,6 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
@@ -110,20 +106,7 @@
       <recent name="com.luoyurui.api.filter.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MobileBlackMapperTest.findAll">
-    <configuration name="DFAUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.luoyurui.strategy.util.DFAUtil" />
-      <module name="beacon-strategy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.luoyurui.strategy.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MobileTransferMapperTest.findAll">
     <configuration name="MobileBlackMapperTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beacon-test" />
       <extension name="coverage">
@@ -134,6 +117,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.luoyurui.test.mapper" />
       <option name="MAIN_CLASS_NAME" value="com.luoyurui.test.mapper.MobileBlackMapperTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MobileTransferMapperTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="beacon-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luoyurui.test.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luoyurui.test.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.luoyurui.test.mapper.MobileTransferMapperTest" />
       <option name="METHOD_NAME" value="findAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -182,10 +181,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.StrategyStarterApp" />
-        <item itemvalue="JUnit.MobileBlackMapperTest.findAll" />
         <item itemvalue="Spring Boot.ApiStarterApp" />
+        <item itemvalue="JUnit.MobileTransferMapperTest.findAll" />
+        <item itemvalue="JUnit.MobileBlackMapperTest.findAll" />
         <item itemvalue="Spring Boot.CacheStarterApp" />
-        <item itemvalue="应用程序.DFAUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +196,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762595364753</updated>
-      <workItem from="1762595365781" duration="99511000" />
+      <workItem from="1762595365781" duration="101026000" />
     </task>
     <task id="LOCAL-00001" summary="烽火云短信平台初次提交">
       <option name="closed" value="true" />
@@ -255,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762942725330</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="黑名单校验">
+      <option name="closed" value="true" />
+      <created>1762954984578</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1762954984578</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +277,8 @@
     <MESSAGE value="号段补全策略" />
     <MESSAGE value="敏感词校验" />
     <MESSAGE value="封装公共部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="封装公共部分" />
+    <MESSAGE value="黑名单校验" />
+    <option name="LAST_COMMIT_MESSAGE" value="黑名单校验" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

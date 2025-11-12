@@ -120,4 +120,10 @@ public class StandardSubmit implements Serializable {
      */
     private String errorMsg;
 
+    //buchong
+    /**
+     * 是否携号转网  =true标识转了
+     */
+    private Boolean IsTransfer = false;
+
 }
