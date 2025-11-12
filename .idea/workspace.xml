@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57ba9605-9101-4ec8-b05b-3479947e887a" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/enums/MobileOperatorEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/util/OperatorUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/config/RabbitTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/util/MobileOperatorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/exception/StrategyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/DirtyWordHutoolDFAStrategyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/util/DFAUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/util/HutoolDFAUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/util/SpringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/mapper/MobileDiertyWordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/luoyurui/test/mapper/MobileDiertyWordMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-cache/src/main/java/com/luoyurui/cache/controller/CacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-cache/src/main/java/com/luoyurui/cache/controller/CacheController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/RabbitMQConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/RabbitMQConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/StrategyStarterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/StrategyStarterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/CacheConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/CacheConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/enums/ExceptionEnums.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/enums/ExceptionEnums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/client/BeaconCacheClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/client/BeaconCacheClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/PhaseStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/PhaseStrategyFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/client/CacheClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/client/CacheClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/DirtyWordStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/DirtyWordStrategyFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/mq/PreSendListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/mq/PreSendListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="JUnit4 Test Class" />
-        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -104,14 +107,28 @@
       <recent name="com.luoyurui.api.filter" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.luoyurui.common.exception" />
       <recent name="com.luoyurui.strategy.config" />
       <recent name="com.luoyurui.test.mapper" />
       <recent name="com.luoyurui.strategy.filter.impl" />
       <recent name="com.luoyurui.api.filter.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MobileAreaMapperTest.findAllMobileArea">
-    <configuration name="MobileAreaMapperTest.findAllMobileArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="应用程序.DFAUtil">
+    <configuration name="DFAUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luoyurui.strategy.util.DFAUtil" />
+      <module name="beacon-strategy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luoyurui.strategy.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MobileDiertyWordMapperTest.findDirtyWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="beacon-test" />
       <extension name="coverage">
         <pattern>
@@ -120,8 +137,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.luoyurui.test.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.luoyurui.test.mapper.MobileAreaMapperTest" />
-      <option name="METHOD_NAME" value="findAllMobileArea" />
+      <option name="MAIN_CLASS_NAME" value="com.luoyurui.test.mapper.MobileDiertyWordMapperTest" />
+      <option name="METHOD_NAME" value="findDirtyWord" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,26 +183,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStarterApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="beacon-test" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luoyurui.test.TestStarterApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.luoyurui.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CacheStarterApp" />
         <item itemvalue="Spring Boot.StrategyStarterApp" />
+        <item itemvalue="Spring Boot.CacheStarterApp" />
+        <item itemvalue="应用程序.DFAUtil" />
         <item itemvalue="Spring Boot.ApiStarterApp" />
-        <item itemvalue="JUnit.MobileAreaMapperTest.findAllMobileArea" />
-        <item itemvalue="Spring Boot.TestStarterApp" />
+        <item itemvalue="JUnit.MobileDiertyWordMapperTest.findDirtyWord" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +201,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762595364753</updated>
-      <workItem from="1762595365781" duration="80696000" />
+      <workItem from="1762595365781" duration="90879000" />
     </task>
     <task id="LOCAL-00001" summary="烽火云短信平台初次提交">
       <option name="closed" value="true" />
@@ -231,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762871327325</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="号段补全策略">
+      <option name="closed" value="true" />
+      <created>1762915755702</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762915755702</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,17 +255,8 @@
     <MESSAGE value="六个校验完毕" />
     <MESSAGE value="雪花算法和发送rabbitmq" />
     <MESSAGE value="策略模块校验以及号码补全" />
-    <option name="LAST_COMMIT_MESSAGE" value="策略模块校验以及号码补全" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="37" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="号段补全策略" />
+    <option name="LAST_COMMIT_MESSAGE" value="号段补全策略" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

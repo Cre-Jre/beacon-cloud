@@ -13,6 +13,7 @@ public enum ExceptionEnums {
     PARAMETER_ERROR(-10,"参数不合法！"),
     SNOWFLAKE_OUT_OF_RANGE(-11,"雪花算法的机器id或服务id超出最大范围！"),
     SNOWFLAKE_TIME_BACK(-12,"雪花算法的服务器出现时间回拨问题！"),
+    HAVE_DIRTY_WORD(-13,"当前短信内容敏感词校验未通过！"),
     ;
 
     private Integer code;

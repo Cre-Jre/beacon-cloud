@@ -91,9 +91,23 @@ public class CacheController {
         return key == null ? null : value;
     }
 
+    //...可以存多个
     @PostMapping(value = "/cache/saddstr/{key}")
     public void saddStr(@PathVariable(value = "key")String key, @RequestBody String... value){
         log.info("【缓存模块】 saddStr方法，存储key = {}，存储value = {}", key, value);
         redisTemplate.opsForSet().add(key, value);
+    }
+
+    @PostMapping(value = "/cache/sinterstr/{key}/{sinterKey}")
+    public Set<Object> sinterstr(@PathVariable(value = "key")String key, @PathVariable(value = "sinterKey")String sinterKey, @RequestBody String... value){
+        log.info("【缓存模块】 sinterstr的交集方法，存储key = {}， sinterKey = {}, 存储value = {}", key,sinterKey, value);
+        //1.存储数据到set
+        redisTemplate.opsForSet().add(key, value);
+        //2.需要将key和sinterKey做交集操作，并拿到返回的set
+        Set<Object> result = redisTemplate.opsForSet().intersect(key, sinterKey);
+        //3.将key删除
+        redisTemplate.delete(key);
+
+        return result;
     }
 }

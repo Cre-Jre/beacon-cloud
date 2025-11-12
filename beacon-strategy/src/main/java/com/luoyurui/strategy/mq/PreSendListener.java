@@ -1,6 +1,7 @@
 package com.luoyurui.strategy.mq;
 
 import com.luoyurui.common.constant.RabbitMQConstants;
+import com.luoyurui.common.exception.StrategyException;
 import com.luoyurui.common.model.StandardSubmit;
 import com.luoyurui.strategy.filter.StrategyFilterContext;
 import com.rabbitmq.client.Channel;
@@ -28,9 +29,9 @@ public class PreSendListener {
             strategyFilterContext.strategy(submit);
             log.info("【策略模块-消费完毕】手动ack");
             channel.basicAck(message.getMessageProperties().getDeliveryTag(),false);
-        } catch (IOException e) {
-            e.printStackTrace();
-            log.error("【策略模块-失败】");
+        } catch (StrategyException e) {
+            log.info("【策略模块-失败】 校验未通过,msg = {}", e.getMessage());
+            channel.basicAck(message.getMessageProperties().getDeliveryTag(),false);
         }
 
     }
