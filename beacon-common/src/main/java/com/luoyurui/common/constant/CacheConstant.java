@@ -32,4 +32,13 @@ public interface CacheConstant {
      * 敏感词前缀
      */
     String DIRTY_WORD = "dirty_word";
+
+    /**
+     * 黑名单前缀
+     */
+    String BLACK = "black:";
+    /**
+     * 间隔符
+     */
+    String SEPARATE = ":";
 }

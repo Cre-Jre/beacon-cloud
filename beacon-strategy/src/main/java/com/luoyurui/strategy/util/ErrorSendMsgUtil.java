@@ -26,10 +26,9 @@ public class ErrorSendMsgUtil {
     /**
      * 策略模块校验未通过，发送写日志操作
      * @param submit
-     * @param dirtyWords
      */
-    public void sendWriteLog(StandardSubmit submit, List<String> dirtyWords) {
-        submit.setErrorMsg(ExceptionEnums.HAVE_DIRTY_WORD.getMsg() + "dirtyWords = " + dirtyWords.toString());
+    public void sendWriteLog(StandardSubmit submit) {
+
         submit.setReportState(SmsConstant.REPORT_FAIL);
         // 发送消息到写日志队列
         rabbitTemplate.convertAndSend(RabbitMQConstants.SMS_WRITE_LOG,submit);

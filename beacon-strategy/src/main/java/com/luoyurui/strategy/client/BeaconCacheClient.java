@@ -27,4 +27,5 @@ public interface BeaconCacheClient {
 
     @GetMapping("/cache/smember/{key}")
     Set smember(@PathVariable(value = "key")String key);
+
 }
