@@ -114,4 +114,10 @@ public class StandardSubmit implements Serializable {
      */
     private Long signId;
 
+    //buchong
+    /**
+     * 短信发送失败原因，记录在当前属性
+     */
+    private String errorMsg;
+
 }

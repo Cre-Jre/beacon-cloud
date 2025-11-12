@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57ba9605-9101-4ec8-b05b-3479947e887a" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/exception/StrategyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/DirtyWordHutoolDFAStrategyFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/util/DFAUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/util/HutoolDFAUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/util/SpringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/mapper/MobileDiertyWordMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-test/src/test/java/com/luoyurui/test/mapper/MobileDiertyWordMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/SmsConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/model/StandardReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/util/ErrorSendMsgUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-cache/src/main/java/com/luoyurui/cache/controller/CacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-cache/src/main/java/com/luoyurui/cache/controller/CacheController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/CacheConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/CacheConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/enums/ExceptionEnums.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/enums/ExceptionEnums.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/controller/SmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/controller/SmsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/RabbitMQConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/RabbitMQConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/model/StandardSubmit.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/model/StandardSubmit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/client/BeaconCacheClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/client/BeaconCacheClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/DirtyWordStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/DirtyWordStrategyFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/mq/PreSendListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/mq/PreSendListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/config/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/DirtyWordHutoolDFAStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/DirtyWordHutoolDFAStrategyFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -186,9 +181,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.StrategyStarterApp" />
+        <item itemvalue="Spring Boot.ApiStarterApp" />
         <item itemvalue="Spring Boot.CacheStarterApp" />
         <item itemvalue="应用程序.DFAUtil" />
-        <item itemvalue="Spring Boot.ApiStarterApp" />
         <item itemvalue="JUnit.MobileDiertyWordMapperTest.findDirtyWord" />
       </list>
     </recent_temporary>
@@ -201,7 +196,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762595364753</updated>
-      <workItem from="1762595365781" duration="90879000" />
+      <workItem from="1762595365781" duration="96426000" />
     </task>
     <task id="LOCAL-00001" summary="烽火云短信平台初次提交">
       <option name="closed" value="true" />
@@ -243,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762915755702</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="敏感词校验">
+      <option name="closed" value="true" />
+      <created>1762935568693</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762935568693</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +259,8 @@
     <MESSAGE value="雪花算法和发送rabbitmq" />
     <MESSAGE value="策略模块校验以及号码补全" />
     <MESSAGE value="号段补全策略" />
-    <option name="LAST_COMMIT_MESSAGE" value="号段补全策略" />
+    <MESSAGE value="敏感词校验" />
+    <option name="LAST_COMMIT_MESSAGE" value="敏感词校验" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
