@@ -1,10 +1,7 @@
 package com.luoyurui.strategy.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 import java.util.Set;
@@ -28,4 +25,17 @@ public interface BeaconCacheClient {
     @GetMapping("/cache/smember/{key}")
     Set smember(@PathVariable(value = "key")String key);
 
+
+    @PostMapping(value = "/cache/zadd/{key}/{score}/{member}")
+    Boolean zAdd(@PathVariable(value = "key")String key,
+                            @PathVariable (value = "score")Long score,
+                            @PathVariable (value = "member")Object member);
+
+    @GetMapping(value = "/cache/zrangebyscorecount/{key}/{start}/{end}")
+    int zRangeByScoreCount(@PathVariable(value = "key")String key,
+                                  @PathVariable(value = "start")Double start,
+                                  @PathVariable(value = "end")Double end);
+
+    @DeleteMapping(value = "/cache/zremove/{key}/{member}")
+    void zRemove(@PathVariable(value = "key") String key,@PathVariable(value = "member") String member);
 }

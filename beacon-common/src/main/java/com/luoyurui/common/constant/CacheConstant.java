@@ -46,4 +46,14 @@ public interface CacheConstant {
      * 写好转网
      */
     String TRANSFER = "transfer:";
+
+    /**
+     * 分钟限流前缀
+     */
+    String LIMIT_MINUTES= "limit:minutes";
+
+    /**
+     * 小时限流前缀
+     */
+    String LIMIT_HOURS= "limit:hours";
 }

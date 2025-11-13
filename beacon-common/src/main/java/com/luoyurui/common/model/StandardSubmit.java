@@ -126,4 +126,9 @@ public class StandardSubmit implements Serializable {
      */
     private Boolean IsTransfer = false;
 
+    //buchong
+    /**
+     * 针对一小时限流规则存储的系统时间毫秒值
+     */
+    private Long oneHourLimitMilli;
 }
