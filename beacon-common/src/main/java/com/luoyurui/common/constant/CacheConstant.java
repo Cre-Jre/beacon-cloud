@@ -56,4 +56,14 @@ public interface CacheConstant {
      * 小时限流前缀
      */
     String LIMIT_HOURS= "limit:hours";
+
+    /**
+     * 客户和通道绑定信息
+     */
+    String CLIENT_CHANNEL= "client_channel:";
+
+    /**
+     * 通道信息前缀
+     */
+    String CHANNEL= "channel:";
 }

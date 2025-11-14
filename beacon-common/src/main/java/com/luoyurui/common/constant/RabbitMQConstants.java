@@ -23,5 +23,10 @@ public interface RabbitMQConstants {
     /**
      * 发送报告  状态报告
      */
-    String SMS_PUSH_REPORT = "sms_push_report";
+    String SMS_PUSH_REPORT = "sms_push_report_topic";
+
+    /**
+     *策略模块推送消息到短信网关模块队列前缀名称
+     */
+    String SMS_GATEWAY = "sms_gateway_topic_";
 }

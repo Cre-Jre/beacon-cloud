@@ -138,4 +138,13 @@ public class CacheController {
         redisTemplate.opsForZSet().remove(key, member);
     }
 
+    @PostMapping(value = "cache/hincrby/{key}/{field}/{number}")
+    public Long hIncrBy(@PathVariable(value = "key") String key,
+                        @PathVariable(value = "field") String field,
+                        @PathVariable(value = "number") Long number) {
+        log.info("【缓存模块】 hIncrBy自增 key = {},field = {},number = {}", key ,field ,number);
+        Long increment = redisTemplate.opsForHash().increment(key, field, number);
+        log.info("【缓存模块】 hIncrBy自增 key = {},field = {},number = {},剩余金额为 = {}", key ,field ,number, increment);
+        return increment;
+    }
 }
