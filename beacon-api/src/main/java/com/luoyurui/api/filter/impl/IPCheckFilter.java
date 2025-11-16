@@ -11,6 +11,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * 校验客户的ip是否白名单
  */
@@ -27,12 +29,13 @@ public class IPCheckFilter implements CheckFilter {
     public void check(StandardSubmit submit) {
         log.info("【接口模块-校验ip】   校验--------");
         //1.根据CacheClient根据客户的apikey和ipAddress去查询客户的ip白名单
-        String ip = cacheClient.hgetString(CacheConstant.CLIENT_BUSINESS + submit.getApikey(), IP_ADDRESS);
+        List<String> ip = (List<String>) cacheClient.hget(CacheConstant.CLIENT_BUSINESS + submit.getApikey(), IP_ADDRESS);
 
         submit.setIp(ip);
         //2.判断ip白名单位null，如果ip白名单weinull，直接放行
-//        if(StringUtils.isEmpty(ip) || ip.contains(submit.getRealIp())){
-        if(1==1){
+        //如果客户未设置ip白名单，什么ip都可以访问
+        if((ip == null || ip.size() == 0 )|| ip.contains(submit.getRealIp())){
+//        if(1==1){
             log.info("【接口模块-校验ip】  客户端请求IP合法！");
             return;
         }

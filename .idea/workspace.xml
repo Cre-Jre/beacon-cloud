@@ -5,48 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57ba9605-9101-4ec8-b05b-3479947e887a" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/enums/CMPP2DeliverEnums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/enums/CMPP2ResultEnums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/util/CMPP2DeliverUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/util/CMPP2ResultUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/util/CMPPDeliverMapUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/util/CMPPSubmitRepoMapUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/SmsGatewayStarterApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/client/BeaconCacheClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/config/ThreadPoolConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/mq/SmsGatewayListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/CMPPDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/CMPPEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/CMPPHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/HeartHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/NettyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/NettyClientInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/NettyStartCMPP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/entity/CmppActiveTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/entity/CmppActiveTestResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/entity/CmppConnect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/entity/CmppDeliver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/entity/CmppMessageHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/entity/CmppSubmit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/entity/CmppSubmitResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/utils/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/netty4/utils/MsgUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/runable/DeliverRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/runable/SubmitRepoRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/java/com/luoyurui/smsgateway/util/SpringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beacon-smsgateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/RabbitMQConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/constant/RabbitMQConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/model/StandardReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/model/StandardReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-push/src/main/java/com/luoyurui/push/mq/PushReportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-push/src/main/java/com/luoyurui/push/mq/PushReportListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/RouteStrategyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/java/com/luoyurui/strategy/filter/impl/RouteStrategyFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beacon-strategy/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-strategy/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/filter/impl/IPCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-api/src/main/java/com/luoyurui/api/filter/impl/IPCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/model/StandardSubmit.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-common/src/main/java/com/luoyurui/common/model/StandardSubmit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/entity/ClientBusiness.java" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/main/java/com/luoyurui/test/entity/ClientBusiness.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beacon-test/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/beacon-test/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,38 +47,38 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/worksPace/beacon-cloud/beacon-common/src/main/java/com/luoyurui/common/util",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.43171558",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "c3674f2a35adb8273e660812ad8085d5",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/worksPace/beacon-cloud/beacon-common/src/main/java/com/luoyurui/common/util&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.43171558&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c3674f2a35adb8273e660812ad8085d5&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -153,16 +116,17 @@
         <option value="CompoundRunConfigurationType" />
         <option value="GroovyScriptRunConfiguration" />
         <option value="MavenRunConfiguration" />
+        <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PushStarterApp">
-    <configuration name="CacheStarterApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="beacon-cache" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luoyurui.cache.CacheStarterApp" />
+  <component name="RunManager" selected="Spring Boot.StrategyStarterApp">
+    <configuration name="ApiStarterApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="beacon-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luoyurui.api.ApiStarterApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.luoyurui.cache.*" />
+          <option name="PATTERN" value="com.luoyurui.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -209,12 +173,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStarterApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="beacon-test" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luoyurui.test.TestStarterApp" />
+    <configuration name="StrategyStarterApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="beacon-strategy" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luoyurui.strategy.StrategyStarterApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.luoyurui.test.*" />
+          <option name="PATTERN" value="com.luoyurui.strategy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -224,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SmsGatewayStarterApp" />
         <item itemvalue="Spring Boot.PushStarterApp" />
+        <item itemvalue="Spring Boot.StrategyStarterApp" />
+        <item itemvalue="Spring Boot.SmsGatewayStarterApp" />
         <item itemvalue="Spring Boot.SearchStarterApp" />
-        <item itemvalue="Spring Boot.TestStarterApp" />
-        <item itemvalue="Spring Boot.CacheStarterApp" />
+        <item itemvalue="Spring Boot.ApiStarterApp" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +207,9 @@
       <workItem from="1762595365781" duration="126821000" />
       <workItem from="1763132656749" duration="16854000" />
       <workItem from="1763222762603" duration="1463000" />
-      <workItem from="1763258823882" duration="15178000" />
+      <workItem from="1763258823882" duration="15823000" />
+      <workItem from="1763304566499" duration="67000" />
+      <workItem from="1763304639963" duration="1934000" />
     </task>
     <task id="LOCAL-00001" summary="烽火云短信平台初次提交">
       <option name="closed" value="true" />
@@ -349,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763192780806</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="短信网关模块">
+      <option name="closed" value="true" />
+      <created>1763300759470</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1763300759470</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +346,8 @@
     <MESSAGE value="路由策略结束" />
     <MESSAGE value="搜索模块" />
     <MESSAGE value="推送模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="推送模块" />
+    <MESSAGE value="短信网关模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="短信网关模块" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
