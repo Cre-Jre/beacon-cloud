@@ -66,4 +66,9 @@ public class StandardReport implements Serializable {
      * 推送报告重试次数
      */
     private Integer resendCount = 0;
+
+    /**
+     * 在网关运营商中二次回调中查询报告回调信息
+     */
+    private String apikey;
 }

@@ -17,6 +17,7 @@
         <module>beacon-strategy</module>
         <module>beacon-search</module>
         <module>beacon-push</module>
+        <module>beacon-smsgateway</module>
     </modules>
 
     <parent>

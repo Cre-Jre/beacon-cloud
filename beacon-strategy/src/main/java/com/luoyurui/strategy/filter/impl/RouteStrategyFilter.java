@@ -87,6 +87,7 @@ public class RouteStrategyFilter implements StrategyFilter {
             Map transferChannel = ChannelTransferUtil.transfer(submit, channel);
             // 找到可以使用的通道了
             ok = true;
+            clientChannel = clientWeightChannel;
             break;
         }
 

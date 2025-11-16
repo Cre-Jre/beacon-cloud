@@ -1,7 +1,7 @@
 # 服务名称
 spring:
   application:
-    name: beacon-strategy
+    name: beacon-smsgateway
   # 多环境
   profiles:
     active: dev
@@ -14,6 +14,7 @@ spring:
       config:
         server-addr: 101.35.130.68:8848
         file-extension: yml
-        # beacon-strategy-dev.yml
+        # beacon-smsgateway-dev.yml
+
 
 

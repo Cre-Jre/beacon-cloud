@@ -108,6 +108,9 @@ public class PushReportListener {
         if(!flag){
             log.info("【推送模块-推送状态报告】 第{}次推送状态报告失败！report = {}",report.getResendCount() + 1,report);
             report.setResendCount(report.getResendCount() + 1);
+            if (report.getResendCount() >= 5) {
+                return;
+            }
             rabbitTemplate.convertAndSend(RabbitMQConfig.DELAYED_EXCHANGE, "", report, new MessagePostProcessor() {
                 @Override
                 public Message postProcessMessage(Message message) throws AmqpException {
