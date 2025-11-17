@@ -71,4 +71,9 @@ public class StandardReport implements Serializable {
      * 在网关运营商中二次回调中查询报告回调信息
      */
     private String apikey;
+
+    /**
+     * 如果第一次修改操作，这里为false，如果时第二次投递，需要记录日志信息
+     */
+    private Boolean reUpdate = false;
 }

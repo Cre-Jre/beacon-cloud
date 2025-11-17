@@ -20,6 +20,7 @@ public enum ExceptionEnums {
     ONE_HOUR_LIMIT(-17,"一小时限流规则生效，无法发送短信！"),
     NO_CHANNEL(-18,"没有合适的通道！"),
     SEARCH_INDEX_ERROR(-19,"es根据索引添加数据失败！"),
+    SEARCH_UPDATE_ERROR(-20,"修改es文档失败"),
     UNKNOWN_ERROR(-999,"未知错误！"),
     ;
 
