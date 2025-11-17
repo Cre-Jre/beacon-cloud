@@ -147,4 +147,12 @@ public class CacheController {
         log.info("【缓存模块】 hIncrBy自增 key = {},field = {},number = {},剩余金额为 = {}", key ,field ,number, increment);
         return increment;
     }
+
+    @PostMapping(value = "/cache/keys/{pattern}")
+    public Set<String> keys (@PathVariable String pattern) {
+        log.info("【缓存模块】 keys方法，根据pattern查询信息 pattern = {}", pattern );
+        Set<String> keys = redisTemplate.keys(pattern);
+        log.info("【缓存模块】 keys方法，根据pattern查询所有的key信息 keys = {}", keys );
+        return keys;
+    }
 }
