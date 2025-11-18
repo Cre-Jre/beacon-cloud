@@ -21,6 +21,8 @@ public enum ExceptionEnums {
     NO_CHANNEL(-18,"没有合适的通道！"),
     SEARCH_INDEX_ERROR(-19,"es根据索引添加数据失败！"),
     SEARCH_UPDATE_ERROR(-20,"修改es文档失败"),
+    KAPACHA_ERROR(-100, "验证码不正确"),
+    AUTHEN_ERROR(-101, "用户名或密码错误"),
     UNKNOWN_ERROR(-999,"未知错误！"),
     ;
 

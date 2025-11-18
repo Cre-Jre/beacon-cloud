@@ -19,6 +19,7 @@
         <module>beacon-push</module>
         <module>beacon-smsgateway</module>
         <module>beacon-moitor</module>
+        <module>beacon-webmaster</module>
     </modules>
 
     <parent>
